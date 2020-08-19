@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>QueryGenerator</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2.headertekst {
+  text-align: center;
+}
+h4.headertekst {
+  text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 9px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body style="background-color:	#A9A9A9;">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Createdb.jsp"><h1>CREATE DATABASE</h1></a>
+<a href="Renamedb.jsp"><h1>RENAME DATABASE</h1></a>
+<a href="DropDatabase.jsp"><h1>DROP DATABASE</h1></a>
+<a href="CreateTable.jsp"><h1>CREATE TABLE</h1></a>
+<a href="RenameTable.jsp"><h1>RENAME TABLE</h1></a>
+<a href="copy_table_without_constraints.jsp"><h1>CREATE WITHOUT CONSTRAINTS</h1></a>
+<a href="copy_table_with_constraints.jsp"><h1>CREATE WITH CONSTRAINTS</h1></a>
+<a href="insert.jsp"><h1>INSERT</h1></a>
+<a href="update.jsp"><h1>UPDATE</h1></a>
+<a href="delete.jsp"><h1>DELETE</h1></a>
+<a href="alter_add.jsp"><h1>ALTER_ADD</h1></a>
+<a href="alter_drop.jsp"><h1>ALTER_DROP</h1></a>
+<a href="alter_modify.jsp"><h1>ALTER_MODIFY</h1></a>
+<a href="alter_add_fk.jsp"><h1>ALTER_ADD_FOREIGNKEY</h1></a>
+<a href="alter_add_uk.jsp"><h1>ALTER_ADD_UNIQUEKEY</h1></a>
+<a href="alter_drop_uk.jsp"><h1>ALTER_DROP_UNIQUEKEY</h1></a>
+<a href="alter_add_pk.jsp"><h1>ALTER_ADD_PRIMARYKEY</h1></a>
+<a href="alter_drop_pk.jsp"><h1>ALTER_DROP_PRIMARYKEY</h1></a>
+<a href="create_procedure.jsp"><h1>CREATE_PROCEDURE</h1></a>
+<a href="drop_procedure.jsp"><h1>DROP_PROCEDURE</h1></a>
+<a href="create_function.jsp"><h1>CREATE_FUNCTION</h1></a>
+
+<a href="drop_function.jsp"><h1>DROP_FUNCTION</h1></a>
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="main">
+    <h2 class="headertekst">No Need To Remember Syntax </h2>
+<h4 class="headertekst">Click On The Side Navigation Menu To Generate Query.</h4>
+
+</div>
+   
+</body>
+</html>
